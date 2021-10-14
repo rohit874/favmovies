@@ -1,0 +1,113 @@
+.movies_container{
+    margin-top: 50px;
+}
+.movies_container > h2{
+    margin: 10px 20px;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 20px;
+}
+.movies{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.movies a{
+    text-decoration: none;
+}
+.movies_item{
+    position: relative;
+    text-align: center;
+    width: 230px;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+.movies_item img{
+    width: 228px;
+    height: 300px;
+}
+.movies_item > h5{
+    text-align: center;
+    margin: 5px;
+    color: var(--text);
+    display: inline-block;
+    background-color: transparent;
+}
+.movies_item:hover > .info{
+    height: 225px;
+}
+.info{
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: var(--text);
+    padding-top: 7px;
+    background: linear-gradient(to bottom, #15202bb6 , #121c25);
+    transition: 0.2s ease;
+}
+.info h5{
+    font-size: 14px;
+    background-color: transparent;
+}
+.info span{
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: transparent;
+    margin: 5px;
+}
+.info p{
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    font-size: 12px;
+    background-color: transparent;
+    max-height: 100px;
+    text-overflow: ellipsis;
+}
+.info button{
+    font-size: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: var(--text);
+    margin: 10px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.info button:hover{
+    background-color: white;
+    color: black;
+}
+@media only screen and (max-width: 767px) {
+    .movies_container{
+        margin-top: 20px;
+    }
+    .movies_container > h2{
+        margin: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .movies{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .movies_item{
+        width: 160px;
+        background-color: #0f1820;
+    }
+    .movies_item img{
+        width: 100%;
+        height: auto;
+    }
+    .info{
+        display: none;
+    }
+}
