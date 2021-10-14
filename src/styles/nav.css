@@ -21,14 +21,14 @@ nav h4{
 }
 nav input{
     width: 100%;
-    border: 1px solid #4b5d6d;
+    border: 1.2px solid #cbcdcf;
     padding: 8px 12px;
     outline: none;
     color: var(--text);
     border-radius: 7px;
 }
 nav input:focus{
-    border: 1px solid #1161a7;
+    border: 1.2px solid #1161a7;
 }
 .search_result{
     position: absolute;

@@ -7,6 +7,7 @@ function WatchList({watchListHandler,watchList}) {
             <h3>WatchList</h3>
             <div className="watchlist">
                 {
+                    watchList.length?
                     watchList.map((data)=>{
                         return(
                     <NavLink key={data.id} to={`/movie/${data.id}`} className="watchlist_items">
@@ -21,7 +22,7 @@ function WatchList({watchListHandler,watchList}) {
                     </div>
                 </NavLink>
                         )
-                    })
+                    }) : <p className="no_result">Watchlist is empty</p>
                 }
             </div>
         </div>
